@@ -1,0 +1,72 @@
+Writing & Executing Tests
+-------------------------
+
+Q: How to Write the syntax of Cypress?
+
+A: So by default Cypress will follow mocha tests,by using mocha how we can write our tests, first we need to follow syntax so If I just go to their official website , and they have clearly given the syntax .In docs , end-to-end testing para given the syntax
+
+So here it is :
+
+       describe('My First Test', () => {
+        it('Does not do much!', () => {
+           expect(true).to.equal(true)
+         })
+       })
+
+
+So This is basically called a arrow function in JavaScript and without Arrow function also we can write by using function keyword ,so this is 'describe' block and which contains a 'it' block .
+
+So 'describe' is a keyword where you can specify the suite name, and brackets here () => represents the function "Arrow Function" and this function we need to implement inside this 
+
+       describe('Suite Name', () => 
+       {
+
+
+
+        it('Does not do much!', () => {     
+           expect(true).to.equal(true)
+         })
+
+
+       })
+
+
+
+So in the 'describe' we can have multiple 'it' blocks this is one block actually so this is a suite name in which it  has 'it' block.It is for writing test like test1, test2 and so on.So you can include any number of tests inside a 'describe' block  
+
+
+So this is the first parameter for 'describe' which says unit name normally and comma( , ) and this is a bracket and arrow.Arrow is symbol of "Arrow Function" in JavaScript
+
+Same syntax instead of "Arrow Function" , we can used "function()" to create are as follows: 
+
+
+       describe('Suite Name', function() 
+       {
+
+
+
+        it('Does not do much!', () => {     
+           expect(true).to.equal(true)
+         })
+
+
+       })
+
+
+And in 'it' block :
+
+
+        it('Does not do much!', function() 
+        {     
+           expect(true).to.equal(true)
+         }
+         
+         )
+
+where {} braces start and end, this is actual implementation of 'it' block .And here also use "functin()" instead of "Arrow Function".
+
+And you knnow JavaScript can create functions in two different ways 
+1: () =>    "Arrow Function"
+2: function()  "Function Keyord use"
+
+
