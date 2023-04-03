@@ -17,6 +17,6 @@ Environment Setup
 
 6: Start Cypress
    
-    npm cypress open         ( or )
+    npx cypress open         ( or )
 
     node_modules/.bin/cypress open

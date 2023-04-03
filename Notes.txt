@@ -1,0 +1,6 @@
+E2E ( End To End ) Testing will supoort for QA .
+And Component Testing is especially recently developed for development for developers,like whatever like unit test cases and integration test cases , the developers can automate those test cases by using component tetsing.
+
+In cypress window, running with your reliable browser and browser window open ,cick E2E tetsing nd create a ew specs .
+
+The new folder E2E in cypress folder will create where we test our E2E test cases( you can create empty specs and check this )
