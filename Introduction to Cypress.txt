@@ -1,0 +1,95 @@
+CYPRESS INTRODUCTION
+--------------------
+
+Frontend Web Automation Testing Tool
+
+Modern Web Applications
+
+React JS,Angular Js.....
+
+Any Application which runs on browser we can easily automate 
+
+Cypress will use JavaScript Languages to automate web applications
+
+Does not use any selenium 
+
+{It is Open Source.It have multiple components like Cypress runner and cypress dashboard 
+
+* Cypress Runner for the installation and we can write automation test schemes we can run our automation test scripts
+* Another Feature is dashboard "Cypress dashboard" which is basically paid tool
+
+80% of the tests we can use it form testRunner ,like we can write we can design the framework we can write our automation testscape and we can execute them and everything almost everything we will able to do bu using testRunner
+
+But in addition if you want to get some more additional features like maintain the test history and parallel testing and if you want to maintain the dashboards like test results and then we need to subscribe the dashboard feature so these are the two things which are there ,but testRunner is completely free available }
+
+TestRunner -- free
+Dashboard -- paid
+
+Cypress is basically built on node environment
+Node.js and comes with packaged as npm module which is basically available in npm model (node package mananger)
+
+We will write our test cases using JavaScript it supports only JavaScript and typeScript so we can also use typescript, it does not use nay zillion librarires as an underlying layer it's totally different than selenium and it is open source
+
+
+WHO CAN USE CYPRESS ? -- Dev & QA
+---------------------
+
+Cypress is especially developed for developers to perform unit testing and integration testing and slowly there are so many features are implemented as part of cypress slowly QA guys are testers also started using cypress. 
+So the cypress is designed for end to end test automation and we can automate end to end test cases 
+
+End-to-end test cases 
+Integration test cases
+Unit test cases
+API Testing
+
+Cypress will support both web and api testing
+
+
+CYPRESS ECOSYSTEM
+-----------------
+1: TestRunner --- open source. locally installed
+2: Dashboard  --- paid
+
+FEATURES 
+-------- 
+1: Time Travel
+2: Debuggability
+3: Automatic Waits or Built-In Waits
+4: Consistence Results
+5: Screenshots and Videos
+6: Cross Browser Testing - locally or remotely
+
+
+{Time - Travel -- So this is particularly the only feature which is not available on selenium . So when you're writing your test scripts , once you execute your test cases , all the steps will be successfully executed. At the time of executing your test cases your cypress will take the snapshot of every run like we have written 10 lines of code all 10 lines are successfully executed for every line . every time Cypress will capture the scheme shorter it maintain the history and everything suppose if you want to navigate to back or move forward right so we can easily do that called time travel.
+Suppose you have executed 10 steps and currently you are in 7th step now I want to repeat the previous steps once again so then yu can go back or similarly you can just move forward ,so that possibility is there in cypress and this is Time Travel feature.}
+
+
+{Debuggability -- Cypress is having access of all dev tools because cypress is running on the same browser internally so which will able to access everything from the dev tools so the debugging is very very easy so if something is got fail somewhere immediately we can cross check there itself without again rerunning the code. }
+
+{Automatic Waits or Built-In Waits -- This is another important feature which is provided in cypress .So whenever your elements on your web page sometimes you may get synchronizaton problems,synchronization problem is nothing but what some thing your page will be loading very very slowly or sometimes elements maynot be available when you're trying to perform some action sometimes elements eill be invisible or sometimes the elements will be disabled state right so when you're trying to click on the link ,still that link is not available or sometimes the elements are detached from the dom structure so if you have these type of issues definitely your script wll throw error so there will be ,so there will be synchronization problem means what your skipped execution is faster than your application response .We don't need to write any wait  commands explicity in your automation test cases.}
+
+{Consistence Results -- Suppose if your test case is perfect written and everythig is fine but sometimes it will pass sometimes it will fail even though your written everythig is correct and because of consistent it will not be consistent across multiple drivers or multiple browsers so that problem is got solved in cypress so you will always get the consistent  results.Same results appearing everytime bacause cypress is running in the browser that's a major advantage}
+
+Screenshots and Videos -- One more important feature from cypress is Screenshots and Videos will automaticallu captured whenever you run your test cases, if something is got failed the screenshot will automatically capture and same test case will be recorded in the video format and these features are inbuilt in cypress we don't need to write any additional code to capture the screenshot or videos from your test cases ad that is additinal benefit of cypress.
+
+{Cross Browser Testing -- And Finally One more feature means what we can run our test cases on multiple browsers like whatever browsers the cypress is supported so far and we can run them locally or we can run them remotely by using jenkins or any other CI/CD tools.
+
+Jenkins -- Jenkins is an open source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery. It is a server-based system that runs in servlet containers such as Apache Tomcat.
+
+CI/CD Tools -- CI CD tools and procedures help developers in applying discipline, efficiency, and high-quality control standards in software development. CI CD is crucial for the DevOps engineers and development teams and is a critical component of the software development and project management process.}
+
+
+
+LIMITATIONS
+-----------
+
+1: Cypress can't automate wndow based /Mobile Apps
+
+2: Cypress have limited support of browsers
+    (Chrome,Chrome Beta,Chrome Canary,Chromium,Edge,Edge Beta,Edge Canary,Edge Dev)
+
+3: Cypress will support only JavaScript and TypeScript, typescript is implemented on top of JavaScriptso typeScript alse will be supported
+
+4: Reading / Writing data into files is difficult
+
+5: Third-party Reporting Tool integration is also limited
