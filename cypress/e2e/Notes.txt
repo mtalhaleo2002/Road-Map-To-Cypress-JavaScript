@@ -63,7 +63,7 @@ And in 'it' block :
          
          )
 
-where {} braces start and end, this is actual implementation of 'it' block .And here also use "functin()" instead of "Arrow Function".
+where {} braces start and end, this is actual implementation of 'it' block .And here also use "function()" instead of "Arrow Function".
 
 And you knnow JavaScript can create functions in two different ways 
 1: () =>    "Arrow Function"
