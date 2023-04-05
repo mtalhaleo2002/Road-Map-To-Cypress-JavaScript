@@ -2,6 +2,7 @@ Writing & Executing Tests
 -------------------------
 
 Q: How to Write the syntax of Cypress?
+--------------------------------------
 
 A: So by default Cypress will follow mocha tests,by using mocha how we can write our tests, first we need to follow syntax so If I just go to their official website , and they have clearly given the syntax .In docs , end-to-end testing para given the syntax
 
@@ -70,3 +71,41 @@ And you knnow JavaScript can create functions in two different ways
 2: function()  "Function Keyord use"
 
 
+
+
+
+Q: How we can execute this without using Cypress application?
+-------------------------------------------------------------
+
+A: So by using command prompt / terminal , we can still execute the test ,we have to execute this command :
+
+npx cypress run 
+
+( npx cypress open ) command will open the cypress window.
+But this 'run' command when runs , it does'nt open any Cypress application , it runs in command prompt / terminal and by default it will follow headless mode because we can't see any UI at the backend.
+
+
+We can execute the same command just by adding one more option called : 
+        npx cypress run --headed 
+
+And this command will execute your test on the headed model ,so when execute this now again runs in cmd prompt/ terminal with Cypress Appllication UI which is launched in browser.
+And this is headed Model 
+
+We can execute your spec file by relative path :
+        npx cypress run --spec cypress\e2e\mytest.cy.js
+
+And this command will execute your test on headless mode.
+
+And by default browser of Cypress is Electron, but I want to test on some other browsers , so for that :
+
+        npx cypress run --browser chrome
+
+And it runs in headless mode , and if you want to see the UI add --headed in that command and it runs your Cypress application on your browser
+
+
+Note: 
+TestSuite--->TestCase--->Test steps
+
+Spec File(cy.js)----> describe blocks(test suites)----> it blocks ( test )
+
+So this is hierarchy we follow in Cypress terminology
