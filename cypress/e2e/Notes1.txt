@@ -1,0 +1,113 @@
+Locators
+--------
+
+  Whenever you automate any web application, we need to interact with the different types of elements it can be text box, checkbox,radio button,image button, it can be linked 
+
+  So whatever you see on web page everything is a web element , so to interact with those elements ,first we need to identify those elements, so to identify those elements we have to use something called Locators
+
+  Every automation tool supports certain type of locators and Cypress especially bu default it will support CSS selectors.
+
+CSS Selector
+------------
+(Is is installed by default)
+
+
+XPath Locator
+-------------
+(We install xpath plugin to use this type of locators)
+
+
+
+CSS Locator
+-----------
+
+
+  There are 2 things in here :
+
+  1: First we need to locate the element
+  2: Second ,identifying the element.
+
+  For example let,s say I have an input box so I want to pass some value here so what we need to do we need to identify the element and to identify this element we need a locator .By using locator we can identify the element.
+
+  So for that Cypress is provided one method called 'getup' so that method we can access by using 'cy' so 'cy.get' here we have to access the locator .So this particular command will use to locate the element and we have to pass the locator as a parameter and then get method will able to identify the element
+
+cy.get(CSS Locator)
+cy.xpath(XPath) 
+
+  If I look at the CSS Selector, there are multiple combinations we can write so in html for example open any web page and (click right in mouse) and select inspect and you can see tag name here in element section ,you can see the class ,name ,placeholder,type, id .There are multiple attributes we can see for the element in html and by using these attributes we can frame our CSS so CSS is basically multiple combinations and one of the combination is 
+
+tag id 
+tag class
+tag attribute
+tag class attribute
+
+  So in four these combinations, tag is optional, and by this we ca write our 
+  own CSS Selector
+
+  So for example , if you go to (http://automationpractice.pl/index.php) page and inspect this and if I look at the search box input is a tag name and there is a class attribute and the type, id, name, placeholder, there are multiple attributes are available.
+
+  To identify this element by using id:
+  Directly you can press Ctrl + F to the inspect of your web page and you can search strings ,selector or xpath in inspect window.
+  OR 
+  You can install selectorshub extension from chrome and so you can  just go to selector Hub and here you can write your own css index path and check , whether your locator is correctly identifying the element .
+
+  So currently I,m using CSS locator I,m writing in selectorshub so here how to identify this element by writing id ,and we have an id available
+
+  So whenever you try to identify the element by using id you can use hash symbol '#' and specify the value 
+
+
+#search_query_top
+
+  And if you are not able to write this manually you can just go to selector hub and which will give you the relevant locators which are currently available for that particular element
+
+  And sometimes you need to other combinations like class ,attribute etc so for that :
+
+#id 
+.class
+[attribute='value']
+.class[attribute='value']
+
+  And all the four cases , tag are optional 
+
+  So suppose by using tag and class to find the element, you can see the tag name 'input' and class name :
+
+input.search_query
+
+  And suppose I want to use attribute. I have a name attribute :
+
+[name='search_query']
+
+  And suppose I want to use tag with class and attribute :
+
+input.search_query[name='search_query']
+
+
+Cypress Information
+-------------------
+
+If you want to access the 'cy' on all the methods and everything we have to specify this  statement:
+
+const cypress = require("cypress") 
+  In every spec file 
+
+And if you don,t want to specify this in every spec file , you can just go to here in the support folder , here you can see commands.js and just add the statement in the last 
+
+///<reference types="Cypress" />
+
+
+In Cypress window on browser there is one feature Time Travel , so when your test executed , in side bar steps are here so whenever your mouse drop down on each step you can see what are the steps execute just place your cursor .when you put the cursor each and every corresponding step  or corresponding screen will be automatically shown in the right side window. So this is Time Travel
+
+And One more important feature is if i can edit test in my VS code and then save it , then my cypress that test  which will run on my browser can be rerun automatically with the changes  
+
+XPath Locator
+-------------
+
+npm install -D @cypress/xpath  
+
+  Follow the docs and search plugins and find and follow the steps 
+
+   You install xpath plugin then only you will be able to access this particular method from cy.
+
+  So you can install plugin and then add this on support/e2e.js:
+
+        require('@cypress/xpath');
