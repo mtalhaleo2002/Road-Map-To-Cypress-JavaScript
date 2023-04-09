@@ -1,0 +1,30 @@
+Cypress Assertions
+------------------
+
+Assertion is basically a validation point, so when you automate any test cases we have to add multiple assertions so it can be title of page we can verify or some element displayed or not some property of the web element or some text present in the web page or not so we insert a multiple types of validations in our automation test script , so we called use assertions.So Cypress is provided so many types of assertions ,and these assertions are comes from chai library internally the Cypress will use so let us see what are the different types of assertions it will support and what kind of assertions are available and how we can use those assertions in our automation test script 
+
+So mainly Cypress assertions are divided into two categories:
+
+1: Implicit Assertions  
+          (These Assertions are the default assertions in Cypress.It is also called built-in assertions)
+
+    In implicit assertions, we will mainly use two things like :
+         should 
+         and 
+    So these are the two keywords which we are to use implicit assertions. We will multiple options which we will discuss later
+
+2: Explicit Assertions
+          (These Assertions which we need to write explicitly)
+
+    In explicit assertions, we will mainly use two things like :
+         expect
+         assert
+
+
+
+So all assertions are derived from child library
+So 'expect' and 'assert' assertions: 
+
+'expect' assertion basically we use in bdd approaches of framework (BDD framework i.e. Behavior Driven Development is a software development approach that allows the tester/business analyst to create test cases in simple text language  )
+
+And 'assert' assertion is basically we used in tdd approach of framework (Test Driven Development (TDD) is a software development practice that focuses on creating unit test cases before developing the actual code. It is an iterative approach combining programming, unit test creation, and refactoring.)
