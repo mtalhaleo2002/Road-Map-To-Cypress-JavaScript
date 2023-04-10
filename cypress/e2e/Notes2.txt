@@ -11,15 +11,27 @@ So mainly Cypress assertions are divided into two categories:
     In implicit assertions, we will mainly use two things like :
          should 
          and 
+
+                eq
+                contain
+                include
+                exist
+                have.length
+                have.value
+                etc..   (These are the parameters that are supported in Implicit Assertions, and have negative assertions also like not.eq, not.contain, not.include.So this keyword/paramaters can use aong 'should' and 'and' assertion )
+
+
+
     So these are the two keywords which we are to use implicit assertions. We will multiple options which we will discuss later
 
 2: Explicit Assertions
           (These Assertions which we need to write explicitly)
 
     In explicit assertions, we will mainly use two things like :
-         expect
-         assert
-
+         expect  --  BDD (Behavior Driven Development)
+         assert  --  TDD (Test Driven Development)
+         
+         And also these two assertions have different parameters which will support (just like 'should' and 'and' having different paramaters)
 
 
 So all assertions are derived from child library
