@@ -24,4 +24,14 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-///<reference types="Cypress" />
+///<reference types="Cypress" />     //for Cypress
+///<reference types="cypress-xpath"/>  // for xpath
+
+Cypress.Commands.add('getIframe', (iframe) => {
+
+    return cy.get("#mce_0_ifr")
+    .its('0.contentDocument.body')
+    .should('be.visible')
+    .then(cy.wrap);
+
+})   //For example if we create multiple test iframes ,so for this we create custome commands for iframe.And this option is available in cypress
