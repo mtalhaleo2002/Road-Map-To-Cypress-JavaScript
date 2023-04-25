@@ -24,8 +24,11 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-///<reference types="Cypress" />     //for Cypress
-///<reference types="cypress-xpath"/>  // for xpath
+///<reference types="Cypress" />       
+//for Cypress
+
+///<reference types="cypress-xpath"/>  
+// for xpath
 
 Cypress.Commands.add('getIframe', (iframe) => {
 

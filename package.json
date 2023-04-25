@@ -12,6 +12,7 @@
     "cypress": "^12.9.0"
   },
   "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.3",
     "@cypress/xpath": "^2.0.3",
     "cypress-iframe": "^1.0.1"
   }
