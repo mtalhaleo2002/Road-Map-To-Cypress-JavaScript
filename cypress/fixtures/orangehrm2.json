@@ -1,0 +1,22 @@
+[
+    {
+        "username": "Admin",
+        "password": "admin123",
+        "expected": "Dashboard"
+
+    },
+    {
+        "username": "xyz",
+        "password": "admin123",
+        "expected": "Invalid credentials",
+        "_comment": "When you passed inavlid data , and in return you got invalid credentials message, that means you're tesr gonna pass"
+
+    },
+    {
+        "username": "Admin",
+        "password": "xyz",
+        "expected": "Invalid credentials",
+        "_comment": "We provide invalid credentials to test the negative testing, and we dicsuss negative testing before the sessions"
+
+    }
+]
