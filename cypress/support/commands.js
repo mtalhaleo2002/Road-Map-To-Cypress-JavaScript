@@ -123,7 +123,7 @@ Cypress.Commands.overwriteQuery(
 
 
 
-// 
+// Customize Component For Login App
 Cypress.Commands.add("loginapp", (email, password) => {
   cy.get("#Email").type(email);
   cy.get("#Password").type(password);
