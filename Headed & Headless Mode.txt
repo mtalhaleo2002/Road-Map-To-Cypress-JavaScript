@@ -1,0 +1,15 @@
+Headed Mode means you open your test cases in cypress window without opening the cypress app .And after execute the window closes and its results are mentioning in terminal you use.
+Commands for use the headed mode :    npx cypress run --headed    (And runs all spec files 1 by 1)
+Command used for only 1 specific file :    npx cypress run --headed -- cypress/e2e/MyFirstTest.cy.js
+
+Headless Mode means you are running your test cases but in backend.You cannot see the test execution .You see only results on terminal 
+Commands for use the headless mode :    npx cypress run  (And runs all spec files 1 by 1)
+Command used for only 1 specific file :    npx cypress run -- cypress/e2e/MyFirstTest.cy.js
+
+And In terminal ,you see your test case runs on Electron Brwser ,you can change it to chrome browser to use this command:
+Headed Mode : npx cypress run --headed -- cypress/e2e/MyFirstTest.cy.js --browser chrome
+HeadLess Mode : npx cypress run -- cypress/e2e/MyFirstTest.cy.js --browser chrome
+
+
+
+
