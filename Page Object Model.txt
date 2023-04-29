@@ -1,0 +1,47 @@
+Page Object Model Pattern In Cypress
+
+Page Object Model is an object design pattern that is popularly used in test automation for a better testing experience. In this technique, a Page class is created for each web page of the application. This Page class contains web elements and methods for action to be performed on these web elements.
+
+
+
+Without Page Object Model Pattern , what are the problems we are facing ?
+
+1: Duplication Of elements/locators
+2: Updation
+ 
+ (Example perspective of problem no: 1)
+For example ,if you have to testcase one screen called Home Screen , you need home screen elements. And next if you want to have another testcase which have home and about screen separately , you again need to elements of home screen and need of about screen elements . Next testcase you want to test the the three screens together (Home, About, Contact) you again need to relocate the elementsof home and about screen and also need of contact screen.
+So you see you again and again locate the elements of your screen which you can test before another test case 
+
+ (Example perspective of problem no: 2)
+ Suppose whenever change in the screens you used for your testcases,so you need to modify every locator in every tests ,and suppose if you refer in 10 testcases.In all 10 testcases, we need to modify the locator that is another problem 
+
+
+But with Page Object Model Pattern:
+
+In this scenario, for every page/screen , we will create a dedicated file which is basically a class .And for every page like (Home, About, Contact) we will create a three page object class (One for Home ,and One for About ,and One for Contact ) which includes all the page elements corresponding action methods .It does'nt have any validations or it does'nt have any test (and these elementsare again belongs to that particular page).
+
+So this is a First Step ,we will create multiple page object classes.
+So once the page object classes are ready , now in actual test case ,we are not going to locate any elements, we're just going to write some test methods along with the validations
+
+So suppose I want to implement my Home page/screen test, so in this I can refer this page object class elements because elements and action methods are already there .I just call these action methods and these will interact with page elements
+
+And Suppose I want to automate another test called About page/screen test , so I need two different pages like Home And About pages and refer those pages in that test
+
+The main goal of Object Model Pattern is once you created your page elements in one class and those elements will be referred in multiple test cases and this will avoid duplication and this will avoid updation.
+(Duplication problem solved )
+(Updation problem solved because you can modify only once in page object class and it can modify overall testcases).
+
+
+
+You can see this I create Page Objects folder in which we create a JSON file (page object class). And when you create it , you can last export the class by defining them the last on your JSON file.
+And when you're exporting here then you're importing it on another file 
+
+This is one way of creating page object class in JavaScript, there are multiple ways are there , this is one approach .
+
+You can see the 2 Approaches in POM pattern :
+First is with Login.js where elements refer in action method .
+And second approach is Login2.js where elements are separated and then these elements were refer in every action method  
+
+
+And In next approach POM with fixtures , by using fixtures we can get the data and we can pass the data into the page object model pattern .
